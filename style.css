@@ -1,63 +1,115 @@
-/* Base Styles */
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
   background-color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
   font-size: 17px;
   color: #333;
-  text-align: center;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
-/* Logo */
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .logo {
+  font-size: 36px;
   color: #6a0dad;
-  font-size: 48px;
-  font-weight: bold;
-  padding: 0.5rem 0;
-  margin-bottom: 1rem;
+  font-weight: 700;
   cursor: pointer;
 }
 
-/* Navigation */
 .navlinks {
   display: flex;
-  justify-content: center;
   gap: 2rem;
   list-style: none;
-  margin-bottom: 2rem;
 }
 
 .navlinks li {
   color: #0b37b3;
   font-weight: 500;
-  transition: color 0.3s ease;
   cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .navlinks li:hover {
   color: #11b4b4;
+  transform: scale(1.05);
 }
 
-/* Hero Section */
+.navlinks li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #11b4b4;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navlinks li:hover::after {
+  width: 100%;
+}
+
+/* HERO SECTION */
 .hero {
   background: url('girl-4181395_1280.png') no-repeat center center/cover;
-  padding: 6rem 1rem;
+  padding: 7rem 1rem;
   color: #2fe732;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
   transition: transform 0.5s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .hero:hover {
   transform: scale(1.03);
 }
 
-/* Buttons */
+/* FOOTER */
+.footer {
+  background-color: #111;
+  color: #eee;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 16px;
+  margin-top: 3rem;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.footer a {
+  color: #11b4b4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: #6a0dad;
+}
+
+/* BUTTONS */
 .btn, .btn1, .btn2 {
   border: none;
   border-radius: 8px;
@@ -65,7 +117,7 @@ body {
   font-weight: 600;
   margin: 0.5rem;
   cursor: pointer;
-  transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .btn {
@@ -74,7 +126,7 @@ body {
 
 .btn:hover {
   background-color: #0cd7b2;
-  color: whitesmoke;
+  color: #fff;
   transform: scale(1.1);
 }
 
@@ -98,7 +150,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Product Section */
+/* PRODUCT SECTION */
 .products {
   padding: 3rem 1rem;
 }
@@ -111,7 +163,7 @@ body {
 }
 
 .product-card {
-  background-color: #d5ff9e;
+  background-color: #e3f9d6;
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(128, 128, 128, 0.3);
@@ -153,10 +205,11 @@ body {
   margin: 0.5rem 0;
 }
 
-/* Info Section */
+/* INFO SECTION */
 .info {
   background-color: #fdfdfd;
   padding: 3rem 1rem;
+  text-align: center;
 }
 
 .info h4 {
@@ -176,16 +229,7 @@ body {
   font-size: 16px;
 }
 
-/* Footer */
-.footer {
-  background-color: #000;
-  color: white;
-  padding: 1rem;
-  font-size: 18px;
-  text-align: center;
-}
-
-/* Section Title */
+/* SECTION TITLE */
 .section-title {
   font-size: 28px;
   color: #8a2be2;
