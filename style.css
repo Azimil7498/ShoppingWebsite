@@ -1,0 +1,187 @@
+
+    body{
+        background-color:whitesmoke;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:17px;
+        text-align:center;
+        
+        }
+        .logo{
+            color:blueviolet;
+            font-size:55px;
+            cursor:progress;
+            padding:1px;
+            margin:2px; 
+        }
+        .navlinks{
+           display:flex;
+          
+           justify-content:space-around;
+            list-style:none;
+            cursor:pointer;
+            padding: 3px;
+            color:cadetblue;
+             }
+             .hero{
+               display:flex;
+               color:rgb(14, 227, 46);
+               
+              
+             }
+             * {
+                margin: 1px;
+                padding: 2px;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', sans-serif;
+              }
+              .hero {
+                background: url('girl-4181395_1280.png') no-repeat center center/cover;
+                padding: 5rem 0;
+                text-align: center;
+                color:rgb(51, 237, 51);
+                transition:transform 0.5s;
+                box-shadow:0 4px 8px grey;
+             
+                
+              }
+              .hero:hover{
+                transform:scale(1.05) ;
+                box-shadow: 0 4px 8px black;
+                transition: 0.6s;
+              }
+              .btn{
+                border-radius:6px;
+                background-color:rgb(178, 215, 12);
+                cursor:pointer;
+                padding:5px;
+            
+              }
+              .btn:hover{
+                background-color:rgb(12, 215, 178);
+                color:whitesmoke;
+              }
+              .btn1{
+                border-radius: 6px;
+                cursor:pointer;
+                background-color:rgb(12, 215, 178);
+              }
+              .btn1:hover{
+                background-color:skyblue;
+                color:whitesmoke
+              }
+              .products{
+                padding:2rem 0;
+                
+              }
+              .product-card{
+                background-color:greenyellow;
+                border-radius: 6px;
+                box-shadow:0 4px 8px grey;
+                
+              }
+              .btn2{
+                border-radius:6px;
+                background-color:rgb(12, 215, 178);
+              }
+              .btn2:hover{
+                background-color:skyblue;
+                color:grey;
+              }
+              .product-card:hover{
+                transform:scale(1.05);
+                box-shadow:0 4px 8px grey;
+              }
+              .product-card img{
+                width:250px;
+                height:200px;
+                margin:2px;
+                padding:1px;
+               
+              }
+              .product-card img:hover{
+                transition:transform 0.5s;
+                transform:scale(1.05);
+              }
+              .product-card p:hover{
+                transition:transform 0.6s;
+                transform:scale(2.05);
+
+              }
+
+              .navlinks {
+                list-style: none;
+                display: flex;
+                gap: 2.7rem;
+                color:rgb(11, 55, 179);
+
+              }
+              .navlinks:hover{
+                color:rgb(17, 180, 180);
+                transition:transform 0.5s;
+                transform:scale(0.5s)
+              }
+              .product-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 2rem;
+              }
+              .product-card h5{
+                font-size:30px;
+                color:rgb(43, 113, 226);
+                font-weight: 600;
+              }
+                .product-card h5:hover{
+                    color:orangered;
+                    font-size:40px;
+                    transition:transform 0.5s;
+                    transform:scale(1.2);
+                    cursor:pointer;
+                    
+                }
+            
+            .footer{
+                background-color:black;
+                color:white;
+                font-size:20px;
+                padding:1rem 0;
+            }
+            .info{
+                background-color:whitesmoke;
+                text-align:center;
+                padding:3rem 0;
+                color:orangered;
+            }
+            .info h4{
+                font-weight:500;
+                font-size:40px;
+
+            }
+            .info h4:hover{
+                color:orangered;
+                font-size:50px;
+                transition:transform 0.5s;
+                transform:scale(1.2);
+                cursor:pointer;
+                
+            }
+            .info p{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color:blue;
+
+            }
+            .section-title{
+                font-size:28px;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color:blueviolet;
+                cursor:pointer;
+                
+            }
+            .btn1:hover{
+
+                transition:transform 0.7s;
+                transform:scale(1.2);
+            }
+            .btn2:hover{
+                transition:transform 0.6s;
+                transform:scale(1.2);
+            }
