@@ -85,7 +85,7 @@ header {
   transform: scale(1.03);
 }
 
-/* FOOTER */
+
 .footer {
   background-color: #111;
   color: #eee;
@@ -263,13 +263,14 @@ header {
 .contact-form{
   display:flex;
   flex-direction:column;
-  gap: 1.7 rem;
+  gap: 0.3 rem;
 }
 .contact-form input{
    padding: 0.8rem 1rem;
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 16px;
+}
 }
 .contact-form .btn {
   background-color: #0cd7b2;
