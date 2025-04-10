@@ -239,3 +239,48 @@ header {
   text-decoration: underline;
   font-size:19px
 }
+.contact-section{
+  background-color:#fff;
+  padding:4 rem 2 rem;
+  text-align:center;
+  border-radius:12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 3 rem auto;
+  max-width:600px;
+  
+}
+.contact-section h2 {
+  font-size: 32px;
+  color: #6a0dad;
+  margin-bottom: 1rem;
+}
+.contact-section p{
+  color:#333;
+  font-size:15px;
+  margin-bottom:3 rem;
+  
+}
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap: 1.7 rem;
+}
+.contact-form input{
+   padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+.contact-form .btn {
+  background-color: #0cd7b2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form .btn:hover {
+  background-color: #00bfff;
+  transform: scale(1.05);
+}
+
+
