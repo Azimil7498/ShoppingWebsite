@@ -1,5 +1,6 @@
 
 
+
 * {
   margin: 0;
   padding: 0;
@@ -77,6 +78,8 @@ header {
   text-align: center;
   transition: transform 0.5s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius:10px;
+  margin:2 rem;
 }
 
 .hero:hover {
@@ -150,9 +153,9 @@ header {
   transform: scale(1.1);
 }
 
-/* PRODUCT SECTION */
+
 .products {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .product-grid {
@@ -175,12 +178,17 @@ header {
 }
 
 .product-card img {
-  width: 100px;
-  height: 100px;
+  display:flex;
+  width: 200px;
+  height: 150px;
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 1rem;
   transition: transform 0.5s ease;
+  margin-right: 150px;
+  margin-top: 20px;
+  margin-left: 150px;
+  
 }
 
 .product-card img:hover {
@@ -205,7 +213,6 @@ header {
   margin: 0.5rem 0;
 }
 
-/* INFO SECTION */
 .info {
   background-color: #fdfdfd;
   padding: 3rem 1rem;
@@ -229,7 +236,7 @@ header {
   font-size: 16px;
 }
 
-/* SECTION TITLE */
+
 .section-title {
   font-size: 28px;
   color: #8a2be2;
