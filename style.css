@@ -282,5 +282,9 @@ header {
   background-color: #00bfff;
   transform: scale(1.05);
 }
-
+.btn:hover {
+  background-color: #333;
+  color: white;
+  transition: 0.3s ease;
+}
 
