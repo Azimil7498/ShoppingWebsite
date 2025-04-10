@@ -16,7 +16,6 @@ body {
   overflow-x: hidden;
 }
 
-/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -70,7 +69,7 @@ header {
   width: 100%;
 }
 
-/* HERO SECTION */
+
 .hero {
   background: url('girl-4181395_1280.png') no-repeat center center/cover;
   padding: 7rem 1rem;
@@ -103,24 +102,24 @@ header {
 }
 
 .footer a {
-  color: #11b4b4;
+  color: #20149b;
   text-decoration: none;
   font-weight: 500;
 }
 
-.footer a:hover {
-  color: #6a0dad;
-}
 
-/* BUTTONS */
+
+
 .btn, .btn1, .btn2 {
   border: none;
   border-radius: 8px;
   padding: 0.6rem 1.2rem;
   font-weight: 600;
-  margin: 0.5rem;
+ 
   cursor: pointer;
   transition: all 0.4s ease;
+  margin-right:50px;
+  
 }
 
 .btn {
@@ -166,29 +165,32 @@ header {
 }
 
 .product-card {
-  background-color: #e3f9d6;
+  background-color:peachpuff;
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(128, 128, 128, 0.3);
   transition: transform 0.4s ease;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center
 }
 
-.product-card:hover {
-  transform: scale(1.05);
-}
+
+
 
 .product-card img {
-  display:flex;
+  
   width: 200px;
   height: 150px;
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 1rem;
   transition: transform 0.5s ease;
-  margin-right: 150px;
-  margin-top: 20px;
-  margin-left: 150px;
+  margin: 20px auto 10px;
+  box-shadow: 0 5px 10px grey;
   
+ 
 }
 
 .product-card img:hover {
@@ -214,7 +216,7 @@ header {
 }
 
 .info {
-  background-color: #fdfdfd;
+  background-color:whitesmoke;
   padding: 3rem 1rem;
   text-align: center;
 }
@@ -234,13 +236,6 @@ header {
 .info p {
   color: #0066cc;
   font-size: 16px;
-}
-
-
-.section-title {
-  font-size: 28px;
-  color: #8a2be2;
-  margin: 2rem 0;
-  font-weight: bold;
-  cursor: pointer;
+  text-decoration: underline;
+  font-size:19px
 }
