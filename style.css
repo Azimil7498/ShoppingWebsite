@@ -263,7 +263,8 @@ header {
 .contact-form{
   display:flex;
   flex-direction:column;
-  gap: 0.3 rem;
+  align-items:center;
+  gap: 1 rem;
 }
 .contact-form input{
    padding: 0.8rem 1rem;
